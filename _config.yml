@@ -20,7 +20,7 @@ heading_anchors: true
 
 # Footer / repo links (edit org/repo after first push)
 aux_links:
-  GitHub: https://github.com/OWNER/REPO
+  GitHub: https://github.com/sebastiannosenzo-png/databricks-workflow
 back_to_top: true
 back_to_top_text: "Back to top"
 
