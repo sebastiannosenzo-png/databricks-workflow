@@ -4,31 +4,45 @@ layout: home
 nav_order: 1
 ---
 
-# Building a Secure Databricks AI Deliverable Workflow
+# databricks workflow
 {: .fs-9 }
 
 A reusable, **company-agnostic prompt library** for building a secure, in-house
 Databricks system that helps staff produce policy memos, reports, and studies
-faster and at higher quality — built step by step with **Genie Code**,
+faster and at higher quality — built **step by step** with **Genie Code**,
 Databricks' native coding agent.
 {: .fs-6 .fw-300 }
 
-[Start with the prerequisites](#the-build-order){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[How to use these prompts](#how-to-use-these-prompts){: .btn .fs-5 .mb-4 .mb-md-0 }
+[What is the project]({% link what-is-the-project.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Start building]({% link steps/step-00-gates.md %}){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
-## What this is
+## This is a step-by-step guide to a secure Databricks workflow
 
-This site is a set of **copy-paste prompts**. Each step in the build has a prompt
-written with **no company specifics** in it. You add your specifics — catalog
-names, data sources, document types, model endpoint — at the moment you paste it
-into Genie Code in your own Databricks workspace.
+These pages walk you, one step at a time, through **standing up a secure AI
+workflow inside Databricks** — using Genie Code to build it for you.
 
-The goal is a system where a user describes a deliverable, the system **plans and
-gets human approval**, then researches, analyzes, charts, drafts, and cites —
+It is written for **organizations that already use Databricks as their data
+management platform and that hold sensitive information which cannot be shared
+outside the perimeter** — government offices, regulated firms, research and policy
+teams. Everything the system touches stays inside Databricks: no data is sent to
+public websites or external services, access follows your existing permissions, and
+a person reviews every output before it is used.
+
+The end result is a system where a user describes a deliverable, the system **plans
+and gets human approval**, then researches, analyzes, charts, drafts, and cites —
 returning everything to a person for review. A human is in the loop at the
-**start**, the **plan approval**, and the **end**.
+**start**, the **plan approval**, and the **end**. See
+[What is the project]({% link what-is-the-project.md %}) for the full picture and
+architecture.
+
+## What this site is
+
+A set of **copy-paste prompts** — one per build step. Each is written with **no
+company specifics**. You add yours — catalog names, data sources, document types,
+model endpoint — when you paste it into Genie Code in your own workspace, and each
+prompt tells Genie Code to ask you for anything it still needs before it runs.
 
 ## How to use these prompts
 

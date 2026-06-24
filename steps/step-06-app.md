@@ -1,6 +1,6 @@
 ---
 title: 6 · Databricks App
-nav_order: 8
+nav_order: 9
 ---
 
 # Step 6 · Databricks App (the single UI)

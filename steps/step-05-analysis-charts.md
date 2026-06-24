@@ -1,6 +1,6 @@
 ---
 title: 5 · Analysis & charts
-nav_order: 7
+nav_order: 8
 ---
 
 # Step 5 · Analysis & charts

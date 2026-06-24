@@ -1,6 +1,6 @@
 ---
 title: 0 · Prerequisites & gates
-nav_order: 2
+nav_order: 3
 ---
 
 # Step 0 · Prerequisites & gates

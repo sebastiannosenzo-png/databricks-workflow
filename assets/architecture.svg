@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1200" font-family="'Helvetica Neue',Arial,sans-serif" role="img" aria-label="End-to-end system architecture on Databricks">
+  <defs>
+    <style>
+      .box-light{fill:#D4DF9E;stroke:#6B654B;stroke-width:1.5}
+      .box-dark{fill:#30321C}
+      .box-taupe{fill:#6B654B}
+      .container{fill:#ffffff;stroke:#4A4B2F;stroke-width:1.5}
+      .perim{fill:none;stroke:#4A4B2F;stroke-width:2;stroke-dasharray:9 7}
+      .t-title{fill:#30321C;font-weight:700;text-anchor:middle}
+      .t-sub{fill:#4A4B2F;text-anchor:middle}
+      .t-lt{fill:#D4DF9E;font-weight:700;text-anchor:middle}
+      .t-ls{fill:#C9D39A;text-anchor:middle}
+      .t-sec{fill:#30321C;font-weight:700}
+      .t-note{fill:#6B654B;font-style:italic;text-anchor:middle}
+      .lreq{stroke:#6B654B;stroke-width:2.5}
+      .lres{stroke:#30321C;stroke-width:2.5}
+      .lext{stroke:#4A4B2F;stroke-width:2;stroke-dasharray:7 5;fill:none}
+    </style>
+    <marker id="req" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6B654B"/></marker>
+    <marker id="res" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#30321C"/></marker>
+    <marker id="ext" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4A4B2F"/></marker>
+  </defs>
+
+  <!-- User -->
+  <rect class="box-taupe" x="640" y="22" width="160" height="52" rx="8"/>
+  <text class="t-lt" x="720" y="54" font-size="18">User</text>
+
+  <!-- Security perimeter -->
+  <rect class="perim" x="48" y="112" width="1208" height="912" rx="14"/>
+  <text class="t-sec" x="70" y="140" font-size="16">Databricks Security Perimeter (AWS)</text>
+
+  <!-- Databricks App -->
+  <rect class="box-dark" x="96" y="158" width="1112" height="64" rx="8"/>
+  <text class="t-lt" x="652" y="186" font-size="18">Databricks App</text>
+  <text class="t-ls" x="652" y="207" font-size="12">One Interface: Input · Plan Approval · Editing · Results</text>
+
+  <!-- Mosaic AI Agent -->
+  <rect class="container" x="96" y="266" width="1112" height="198" rx="10"/>
+  <text class="t-title" x="652" y="296" font-size="18">Mosaic AI Agent</text>
+  <text class="t-sub" x="652" y="316" font-size="12">Plans · Calls Tools · Synthesizes</text>
+  <text class="t-note" x="652" y="336" font-size="12">Served and governed through Databricks</text>
+  <g font-size="15">
+    <rect class="box-light" x="132" y="356" width="316" height="64" rx="8"/>
+    <text class="t-title" x="290" y="394">Claude</text>
+    <rect class="box-light" x="494" y="356" width="316" height="64" rx="8"/>
+    <text class="t-title" x="652" y="394">GPT OSS</text>
+    <rect class="box-light" x="856" y="356" width="316" height="64" rx="8"/>
+    <text class="t-title" x="1014" y="394">Gemini</text>
+  </g>
+
+  <!-- Tools row -->
+  <g>
+    <rect class="box-light" x="110" y="502" width="196" height="80" rx="8"/>
+    <text class="t-title" x="208" y="536" font-size="15">Vector Search</text>
+    <text class="t-sub" x="208" y="558" font-size="11">Internal &amp; Project Docs</text>
+
+    <rect class="box-light" x="332" y="502" width="196" height="80" rx="8"/>
+    <text class="t-title" x="430" y="536" font-size="15">Genie</text>
+    <text class="t-sub" x="430" y="558" font-size="11">Natural Language → SQL</text>
+
+    <rect class="box-light" x="554" y="502" width="196" height="80" rx="8"/>
+    <text class="t-title" x="652" y="536" font-size="15">Analysis &amp; ML</text>
+    <text class="t-sub" x="652" y="558" font-size="11">Regressions, AutoML, Sandbox</text>
+
+    <rect class="box-light" x="776" y="502" width="196" height="80" rx="8"/>
+    <text class="t-title" x="874" y="536" font-size="15">Chart Engine</text>
+    <text class="t-sub" x="874" y="558" font-size="11">Styled Visualizations</text>
+
+    <rect class="box-light" x="998" y="502" width="196" height="80" rx="8"/>
+    <text class="t-title" x="1096" y="536" font-size="15">Web Research AI</text>
+    <text class="t-sub" x="1096" y="558" font-size="11">External Web Research</text>
+  </g>
+
+  <!-- External Web (outside perimeter) -->
+  <text class="t-note" x="1352" y="500" font-size="11">Secured by Web Research AI</text>
+  <rect class="box-taupe" x="1286" y="510" width="132" height="72" rx="8"/>
+  <text class="t-lt" x="1352" y="542" font-size="14">External Web</text>
+  <text class="t-ls" x="1352" y="563" font-size="11">Any Site</text>
+  <path class="lext" d="M1194,546 L1280,546" marker-end="url(#ext)"/>
+
+  <!-- Unity Catalog Governance -->
+  <rect class="container" x="96" y="624" width="1112" height="376" rx="10"/>
+  <text class="t-sec" x="118" y="652" font-size="16">Unity Catalog Governance</text>
+  <g>
+    <rect class="box-light" x="122" y="672" width="334" height="120" rx="8"/>
+    <text class="t-title" x="289" y="726" font-size="16">Lakeflow Ingestion</text>
+    <text class="t-sub" x="289" y="750" font-size="12">Scheduled Dataset Pulls</text>
+
+    <rect class="box-light" x="486" y="672" width="334" height="120" rx="8"/>
+    <text class="t-title" x="653" y="726" font-size="16">Medallion Delta Tables</text>
+    <text class="t-sub" x="653" y="750" font-size="12">Bronze · Silver · Gold</text>
+
+    <rect class="box-light" x="850" y="672" width="334" height="120" rx="8"/>
+    <text class="t-title" x="1017" y="726" font-size="16">Vector Index</text>
+    <text class="t-sub" x="1017" y="750" font-size="12">Document &amp; Project Embeddings</text>
+
+    <rect class="box-light" x="122" y="828" width="334" height="120" rx="8"/>
+    <text class="t-title" x="289" y="882" font-size="16">Document Store &amp; Registry</text>
+    <text class="t-sub" x="289" y="906" font-size="12">Volumes · Project Folders · Usage Log</text>
+
+    <rect class="box-light" x="486" y="828" width="334" height="120" rx="8"/>
+    <text class="t-title" x="653" y="882" font-size="16">MLflow + Model Registry</text>
+    <text class="t-sub" x="653" y="906" font-size="12">Analysis Lineage · Models</text>
+
+    <rect class="box-light" x="850" y="828" width="334" height="120" rx="8"/>
+    <text class="t-title" x="1017" y="882" font-size="16">Style Rules + Edit Logs</text>
+    <text class="t-sub" x="1017" y="906" font-size="12">House Style · Learning Loop</text>
+  </g>
+
+  <!-- Dataset API (outside perimeter) -->
+  <rect class="box-taupe" x="70" y="1052" width="168" height="60" rx="8"/>
+  <text class="t-lt" x="154" y="1082" font-size="14">Dataset API</text>
+  <text class="t-ls" x="154" y="1101" font-size="11">APIs</text>
+  <text class="t-note" x="300" y="1044" font-size="11" text-anchor="start">Scheduled Pull</text>
+  <path class="lext" d="M154,1052 V792 H289" marker-end="url(#ext)"/>
+
+  <!-- Flow arrows: User <-> App -->
+  <path class="lreq" d="M700,76 V154" marker-end="url(#req)"/>
+  <path class="lres" d="M744,154 V78" marker-end="url(#res)"/>
+  <text class="t-note" x="812" y="246" font-size="12" text-anchor="start">Results To App</text>
+
+  <!-- App <-> Agent -->
+  <path class="lreq" d="M700,224 V262" marker-end="url(#req)"/>
+  <path class="lres" d="M744,262 V226" marker-end="url(#res)"/>
+
+  <!-- Agent <-> Tools -->
+  <path class="lreq" d="M636,466 V498" marker-end="url(#req)"/>
+  <path class="lres" d="M668,498 V468" marker-end="url(#res)"/>
+
+  <!-- Tools <-> UC -->
+  <path class="lreq" d="M636,584 V620" marker-end="url(#req)"/>
+  <path class="lres" d="M668,620 V586" marker-end="url(#res)"/>
+
+  <!-- Legend -->
+  <g font-size="13">
+    <rect class="box-taupe" x="470" y="1150" width="26" height="14" rx="3"/>
+    <text fill="#30321C" x="504" y="1162" text-anchor="start">Request (Down)</text>
+    <rect class="box-dark" x="640" y="1150" width="26" height="14" rx="3"/>
+    <text fill="#30321C" x="674" y="1162" text-anchor="start">Results (Up)</text>
+    <path class="lext" d="M806,1157 H838"/>
+    <text fill="#30321C" x="846" y="1162" text-anchor="start">External Access</text>
+  </g>
+</svg>

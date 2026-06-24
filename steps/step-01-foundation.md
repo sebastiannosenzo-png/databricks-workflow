@@ -1,6 +1,6 @@
 ---
 title: 1 · Unity Catalog foundation & perimeter
-nav_order: 3
+nav_order: 4
 ---
 
 # Step 1 · Unity Catalog foundation & security perimeter

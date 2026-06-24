@@ -1,6 +1,6 @@
 ---
 title: 2 · Lakeflow ingestion pipeline
-nav_order: 4
+nav_order: 5
 ---
 
 # Step 2 · Lakeflow ingestion pipeline (one data source)

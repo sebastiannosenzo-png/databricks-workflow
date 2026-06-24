@@ -1,6 +1,6 @@
 ---
 title: 3 · Document layer & Vector Search
-nav_order: 5
+nav_order: 6
 ---
 
 # Step 3 · Document layer & Vector Search
