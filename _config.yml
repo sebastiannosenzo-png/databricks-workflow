@@ -1,0 +1,44 @@
+# Site
+title: Databricks AI Deliverable Workflow
+description: >-
+  A reusable, company-agnostic prompt library for building a secure, in-house
+  Databricks AI system that helps staff produce policy memos, reports, and
+  studies faster and at higher quality — built with Genie Code.
+remote_theme: just-the-docs/just-the-docs
+
+# Build
+markdown: kramdown
+permalink: pretty
+
+# just-the-docs settings
+color_scheme: olive
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+heading_anchors: true
+
+# Footer / repo links (edit org/repo after first push)
+aux_links:
+  GitHub: https://github.com/OWNER/REPO
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Callouts
+callouts:
+  warning:
+    title: Risk / Verify
+    color: red
+  note:
+    title: Note
+    color: grey-dk
+  principle:
+    title: Design principle
+    color: green
+
+# Exclude scaffolding from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README-dev.md

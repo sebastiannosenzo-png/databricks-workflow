@@ -1,0 +1,27 @@
+// Olive / tea-green brand scheme
+// Palette: #12100E  #30321C  #4A4B2F  #6B654B  #D4DF9E  on white
+
+$body-background-color: #ffffff;
+$body-text-color: #12100E;
+$body-heading-color: #30321C;
+
+$link-color: #4A4B2F;
+$btn-primary-color: #4A4B2F;
+$base-button-color: #f4f5ea;
+
+$sidebar-color: #fbfcf5;
+$border-color: #e3e6cf;
+
+$nav-child-link-color: #6B654B;
+
+// Code
+$code-background-color: #f4f5ea;
+
+// Search highlight
+$search-result-preview-color: #6B654B;
+
+// Tables
+$table-background-color: #ffffff;
+
+// Callout / accent
+$feedback-color: darken($sidebar-color, 3%);
