@@ -4,13 +4,13 @@ layout: home
 nav_order: 1
 ---
 
-# databricks workflow
+# Databricks Workflow
 {: .fs-9 }
 
 A reusable, **company-agnostic prompt library** for building a secure, in-house
-Databricks system that helps staff produce policy memos, reports, and studies
-faster and at higher quality — built **step by step** with **Genie Code**,
-Databricks' native coding agent.
+Databricks system that helps staff produce **data analyses and research** faster
+and at higher quality — built **step by step** with **Genie Code**, Databricks'
+native coding agent.
 {: .fs-6 .fw-300 }
 
 [What is the project]({% link what-is-the-project.md %}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }

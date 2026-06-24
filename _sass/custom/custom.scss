@@ -1,0 +1,38 @@
+// ── Brand typography: Times New Roman across the UI ───────────────────────────
+$serif: "Times New Roman", Times, Georgia, serif;
+
+body,
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.site-nav, .nav-list, .nav-list-link, .nav-category,
+.aux-nav, .aux-nav-listitem, .breadcrumb-nav,
+.btn, .search-input, .search-result-title, .search-result-rel-url,
+.main-content, .main-content p, .main-content li, .main-content td,
+.main-content th, .label, .site-footer, table, blockquote {
+  font-family: $serif !important;
+}
+
+// Keep code legible — prompts and example code stay monospace.
+code, pre, kbd, samp, tt,
+.highlight, .highlighter-rouge,
+div.highlighter-rouge, .main-content pre code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+}
+
+// ── Full-width layout: let the content span the page ──────────────────────────
+.main {
+  max-width: none !important;
+}
+
+.main-content-wrap,
+.main-content {
+  max-width: none !important;
+}
+
+// Comfortable side padding so text isn't edge-to-edge on wide screens.
+@media (min-width: 50rem) {
+  .main-content-wrap {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}
